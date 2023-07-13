@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+
 """
 0-minoperations module - contains a method that
 calculates the fewest number of operations(copy all & paste)
