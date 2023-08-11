@@ -11,15 +11,15 @@ if (process.argv.length > 2) {
     const charactersName = charactersUrl.map(
       url => new Promise((resolve, reject) => {
         request(url, (promiseError, _, RequestBody) => {
-        if (promiseError) {
-	  reject(promiseError);
-	}
-	  resolve(JSON.parse(RequestBody).name);
-	});
+          if (promiseError) {
+            reject(promiseError);
+          }
+          resolve(JSON.parse(RequestBody).name);
+        });
       }));
 
     Promise.all(charactersName)
-      .then(names => console.log(names.join("\n")))
+      .then(names => console.log(names.join('\n')))
       .catch(errors => console.log(errors));
-    });
+  });
 }
