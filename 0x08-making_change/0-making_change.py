@@ -12,7 +12,7 @@ def makeChange(coins: List[int], total: int) -> int:
      - coins (List): list of the values of the coins in your possession
      - total (int): total amount
     Return:
-      - coins_count (int): fewest number of coins
+      - coins_count (int): fewest number of coins needed
     """
     if total <= 0:
         return 0
