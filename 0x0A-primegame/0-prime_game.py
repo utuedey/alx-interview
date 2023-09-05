@@ -4,7 +4,7 @@
 """
 
 
-def isWinner(x: int, nums: list) -> str:
+def isWinner(x, nums):
     """Determine the winner of the prime game
     Args:
      -x(int) - number of rounds
